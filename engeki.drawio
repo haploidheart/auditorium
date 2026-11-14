@@ -1,78 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2026-11-13T09:54:00.000Z" agent="Gemini" version="24.7.17" type="device">
-  <diagram id="AuditoriumAudioSystem" name="講堂音響系統図（舞台→照明室モニター）">
-    <mxGraphModel dx="1420" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Gemini">
+  <diagram id="AuditoriumAudioSystem" name="演劇用照明室モニタ">
+    <mxGraphModel dx="1633" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- タイトル -->
-        <mxCell id="title" value="講堂 音響系統図（舞台音声 → 照明室モニター出力の流れ）" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="650" height="35" as="geometry" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A1A1A;" value="講堂 音響系統図（舞台音声 → 照明室モニター出力の流れ）" vertex="1">
+          <mxGeometry height="35" width="650" x="40" y="20" as="geometry" />
         </mxCell>
-
-        <!-- エリア枠1：舞台 -->
-        <mxCell id="area_stage" value="【舞台】" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F5F9FF;strokeColor=#4A90E2;fontSize=14;fontStyle=1;startSize=30;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="70" width="320" height="680" as="geometry" />
+        <mxCell id="area_stage" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F5F9FF;strokeColor=#4A90E2;fontSize=14;fontStyle=1;startSize=30;rounded=1;" value="【舞台】" vertex="1">
+          <mxGeometry height="680" width="320" x="40" y="70" as="geometry" />
         </mxCell>
-
-        <!-- 舞台内の機器 -->
-        <mxCell id="stage_mic" value="有線バウンダリーマイク&#xa;（1台）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2B5B84;fontSize=12;fontStyle=1;" vertex="1" parent="area_stage">
-          <mxGeometry x="60" y="55" width="200" height="55" as="geometry" />
+        <mxCell id="stage_mic" parent="area_stage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2B5B84;fontSize=12;fontStyle=1;" value="有線バウンダリーマイク&#xa;（1台）" vertex="1">
+          <mxGeometry height="55" width="200" x="60" y="55" as="geometry" />
         </mxCell>
-
-        <mxCell id="stage_mic_outlet" value="マイクコンセント（舞台盤）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF3FA;strokeColor=#2B5B84;fontSize=12;" vertex="1" parent="area_stage">
-          <mxGeometry x="60" y="155" width="200" height="50" as="geometry" />
+        <mxCell id="stage_mic_outlet" parent="area_stage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF3FA;strokeColor=#2B5B84;fontSize=12;" value="マイクコンセント（舞台盤）" vertex="1">
+          <mxGeometry height="50" width="200" x="60" y="155" as="geometry" />
         </mxCell>
-
-        <mxCell id="stage_wl_tx" value="再生機器用&#xa;ワイヤレス送信機&#xa;（舞台袖／PC・スマホ等接続）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2B5B84;fontSize=12;fontStyle=1;" vertex="1" parent="area_stage">
-          <mxGeometry x="60" y="290" width="200" height="70" as="geometry" />
+        <mxCell id="stage_wl_tx" parent="area_stage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2B5B84;fontSize=12;fontStyle=1;" value="再生機器用&#xa;ワイヤレス送信機&#xa;（舞台袖／PC・スマホ等接続）" vertex="1">
+          <mxGeometry height="70" width="200" x="60" y="290" as="geometry" />
         </mxCell>
-
-        <mxCell id="stage_mon_spk" value="舞台モニタースピーカー&#xa;&#xa;【出力音声】&#xa;・トークバックマイク&#xa;・再生機器（ワイヤレス）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=12;fontStyle=1;" vertex="1" parent="area_stage">
-          <mxGeometry x="50" y="450" width="220" height="105" as="geometry" />
+        <mxCell id="stage_mon_spk" parent="area_stage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=12;fontStyle=1;" value="舞台モニタースピーカー&#xa;&#xa;【出力音声】&#xa;・トークバックマイク&#xa;・再生機器（ワイヤレス）" vertex="1">
+          <mxGeometry height="105" width="220" x="50" y="450" as="geometry" />
         </mxCell>
-
-        <mxCell id="note_stage" value="※注記：有線バウンダリーマイクの音は&#xa;ハウリング防止のため、舞台モニター&#xa;スピーカーには返しません。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF2CC;strokeColor=#D6B656;size=14;align=left;spacingLeft=10;fontSize=11;fontColor=#333333;" vertex="1" parent="area_stage">
-          <mxGeometry x="35" y="580" width="250" height="75" as="geometry" />
+        <mxCell id="note_stage" parent="area_stage" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF2CC;strokeColor=#D6B656;size=14;align=left;spacingLeft=10;fontSize=11;fontColor=#333333;" value="※注記：有線バウンダリーマイクの音は&#xa;ハウリング防止のため、舞台モニター&#xa;スピーカーには返しません。" vertex="1">
+          <mxGeometry height="75" width="250" x="35" y="580" as="geometry" />
         </mxCell>
-
-        <!-- 舞台内の接続線 -->
-        <mxCell id="edge_mic_to_outlet" value="XLR" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#2B5B84;fontSize=11;" edge="1" parent="area_stage" source="stage_mic" target="stage_mic_outlet">
+        <mxCell id="edge_mic_to_outlet" edge="1" parent="area_stage" source="stage_mic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#2B5B84;fontSize=11;" target="stage_mic_outlet" value="XLR">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- エリア枠2：音響室 -->
-        <mxCell id="area_sound" value="【音響室】" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F4FBF7;strokeColor=#2E8B57;fontSize=14;fontStyle=1;startSize=30;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="70" width="350" height="680" as="geometry" />
+        <mxCell id="area_sound" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F4FBF7;strokeColor=#2E8B57;fontSize=14;fontStyle=1;startSize=30;rounded=1;" value="【音響室】" vertex="1">
+          <mxGeometry height="680" width="350" x="420" y="70" as="geometry" />
         </mxCell>
-
-        <!-- 音響室内の機器 -->
-        <mxCell id="sound_wl_rx" value="ワイヤレス受信機" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E8B57;fontSize=12;fontStyle=1;" vertex="1" parent="area_sound">
-          <mxGeometry x="75" y="295" width="200" height="55" as="geometry" />
+        <mxCell id="sound_wl_rx" parent="area_sound" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E8B57;fontSize=12;fontStyle=1;" value="ワイヤレス受信機" vertex="1">
+          <mxGeometry height="55" width="200" x="75" y="295" as="geometry" />
         </mxCell>
-
-        <mxCell id="sound_mixer" value="メインミキサー&#xa;（各音声の集約・音量調整・送り出し）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F5EC;strokeColor=#2E8B57;fontSize=13;fontStyle=1;" vertex="1" parent="area_sound">
-          <mxGeometry x="55" y="410" width="240" height="80" as="geometry" />
+        <mxCell id="sound_mixer" parent="area_sound" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F5EC;strokeColor=#2E8B57;fontSize=13;fontStyle=1;" value="メインミキサー&#xa;（各音声の集約・音量調整・送り出し）" vertex="1">
+          <mxGeometry height="80" width="240" x="55" y="410" as="geometry" />
         </mxCell>
-
-        <mxCell id="sound_talkback" value="トークバックマイク&#xa;（指示・連絡用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C0392B;fontSize=12;fontStyle=1;" vertex="1" parent="area_sound">
-          <mxGeometry x="25" y="545" width="145" height="60" as="geometry" />
+        <mxCell id="sound_talkback" parent="area_sound" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C0392B;fontSize=12;fontStyle=1;" value="トークバックマイク&#xa;（指示・連絡用）" vertex="1">
+          <mxGeometry height="60" width="145" x="25" y="545" as="geometry" />
         </mxCell>
-
-        <mxCell id="sound_mon_spk" value="音響室モニタースピーカー&#xa;（室内確認用）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=11;fontStyle=1;" vertex="1" parent="area_sound">
-          <mxGeometry x="185" y="545" width="145" height="60" as="geometry" />
+        <mxCell id="sound_mon_spk" parent="area_sound" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=11;fontStyle=1;" value="音響室モニタースピーカー&#xa;（室内確認用）" vertex="1">
+          <mxGeometry height="60" width="145" x="185" y="545" as="geometry" />
         </mxCell>
-
-        <mxCell id="note_sound" value="※重要：トークバックマイクの音声は&#xa;客席メインスピーカー系へは送りません。&#xa;（舞台と照明室のモニターにのみ出力）" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FADBD8;strokeColor=#C0392B;size=14;align=left;spacingLeft=10;fontSize=11;fontColor=#78281F;fontStyle=1;" vertex="1" parent="area_sound">
-          <mxGeometry x="25" y="615" width="305" height="55" as="geometry" />
+        <mxCell id="note_sound" parent="area_sound" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FADBD8;strokeColor=#C0392B;size=14;align=left;spacingLeft=10;fontSize=11;fontColor=#78281F;fontStyle=1;" value="※重要：トークバックマイクの音声は&#xa;客席メインスピーカー系へは送りません。&#xa;（舞台と照明室のモニターにのみ出力）" vertex="1">
+          <mxGeometry height="55" width="305" x="25" y="615" as="geometry" />
         </mxCell>
-
-        <!-- 音響室内の接続線 -->
-        <mxCell id="edge_rx_to_mixer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#2E8B57;" edge="1" parent="area_sound" source="sound_wl_rx" target="sound_mixer">
+        <mxCell id="edge_rx_to_mixer" edge="1" parent="area_sound" source="sound_wl_rx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#2E8B57;" target="sound_mixer" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="edge_tb_to_mixer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#C0392B;" edge="1" parent="area_sound" source="sound_talkback" target="sound_mixer">
+        <mxCell id="edge_tb_to_mixer" edge="1" parent="area_sound" source="sound_talkback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#C0392B;" target="sound_mixer" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="98" y="515" />
@@ -80,8 +57,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="edge_mixer_to_soundmon" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#D9822B;" edge="1" parent="area_sound" source="sound_mixer" target="sound_mon_spk">
+        <mxCell id="edge_mixer_to_soundmon" edge="1" parent="area_sound" source="sound_mixer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#D9822B;" target="sound_mon_spk" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="225" y="515" />
@@ -89,45 +65,31 @@
             </Array>
           </mxGeometry>
         </mxCell>
-
-        <!-- エリア枠3：照明室 -->
-        <mxCell id="area_light" value="【照明室】" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FAF5FF;strokeColor=#8E44AD;fontSize=14;fontStyle=1;startSize=30;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="830" y="70" width="300" height="680" as="geometry" />
+        <mxCell id="area_light" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FAF5FF;strokeColor=#8E44AD;fontSize=14;fontStyle=1;startSize=30;rounded=1;" value="【照明室】" vertex="1">
+          <mxGeometry height="680" width="300" x="830" y="70" as="geometry" />
         </mxCell>
-
-        <!-- 照明室内の機器 -->
-        <mxCell id="light_submixer" value="サブミキサー&#xa;（照明室内での音量調整）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#8E44AD;fontSize=12;fontStyle=1;" vertex="1" parent="area_light">
-          <mxGeometry x="50" y="210" width="200" height="70" as="geometry" />
+        <mxCell id="light_submixer" parent="area_light" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#8E44AD;fontSize=12;fontStyle=1;" value="サブミキサー&#xa;（照明室内での音量調整）" vertex="1">
+          <mxGeometry height="70" width="200" x="50" y="210" as="geometry" />
         </mxCell>
-
-        <mxCell id="light_mon_spk" value="照明室モニタースピーカー&#xa;&#xa;【出力音声】&#xa;・舞台（バウンダリーマイク）&#xa;・再生機器（ワイヤレス）&#xa;・トークバックマイク" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=12;fontStyle=1;" vertex="1" parent="area_light">
-          <mxGeometry x="40" y="370" width="220" height="125" as="geometry" />
+        <mxCell id="light_mon_spk" parent="area_light" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E7;strokeColor=#D9822B;fontSize=12;fontStyle=1;" value="照明室モニタースピーカー&#xa;&#xa;【出力音声】&#xa;・舞台（バウンダリーマイク）&#xa;・再生機器（ワイヤレス）&#xa;・トークバックマイク" vertex="1">
+          <mxGeometry height="125" width="220" x="40" y="370" as="geometry" />
         </mxCell>
-
-        <!-- 照明室内の接続線 -->
-        <mxCell id="edge_sub_to_lightmon" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#8E44AD;" edge="1" parent="area_light" source="light_submixer" target="light_mon_spk">
+        <mxCell id="edge_sub_to_lightmon" edge="1" parent="area_light" source="light_submixer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#8E44AD;" target="light_mon_spk" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- 部屋をまたぐ接続線（ルート層） -->
-        <!-- 1. 舞台マイクコンセント → 音響室メインミキサー -->
-        <mxCell id="cross_outlet_to_mixer" value="常設配線（舞台マイク音声）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#2B5B84;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="stage_mic_outlet" target="sound_mixer">
-          <mxGeometry x="-0.15" relative="1" as="geometry">
+        <mxCell id="cross_outlet_to_mixer" edge="1" parent="1" source="stage_mic_outlet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#2B5B84;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="sound_mixer" value="常設配線（舞台マイク音声）">
+          <mxGeometry relative="1" x="-0.15" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="390" y="250" />
               <mxPoint x="390" y="495" />
             </Array>
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <!-- 2. 舞台ワイヤレス送信機 → 音響室ワイヤレス受信機 -->
-        <mxCell id="cross_wl" value="無線送信" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;dashPattern=6 4;strokeColor=#2B5B84;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="stage_wl_tx" target="sound_wl_rx">
+        <mxCell id="cross_wl" edge="1" parent="1" source="stage_wl_tx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;dashPattern=6 4;strokeColor=#2B5B84;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="sound_wl_rx" value="無線送信">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- 3. 音響室メインミキサー → 舞台モニタースピーカー -->
-        <mxCell id="cross_mixer_to_stagemon" value="返し音声&#xa;（トークバック＋再生機器）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#D9822B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="sound_mixer" target="stage_mon_spk">
+        <mxCell id="cross_mixer_to_stagemon" edge="1" parent="1" source="sound_mixer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2.5;strokeColor=#D9822B;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="stage_mon_spk" value="返し音声&#xa;（トークバック＋再生機器）">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="400" y="535" />
@@ -135,18 +97,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-
-        <!-- 4. 音響室メインミキサー → 照明室サブミキサー -->
-        <mxCell id="cross_mixer_to_sub" value="キャノンケーブル（XLR）&#xa;（舞台マイク＋再生機器＋トークバック）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#8E44AD;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="sound_mixer" target="light_submixer">
-          <mxGeometry x="0.05" relative="1" as="geometry">
+        <mxCell id="cross_mixer_to_sub" edge="1" parent="1" source="sound_mixer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#8E44AD;fontSize=11;fontStyle=1;labelBackgroundColor=#FFFFFF;" target="light_submixer" value="キャノンケーブル（XLR）&#xa;（舞台マイク＋再生機器＋トークバック）">
+          <mxGeometry relative="1" x="0.05" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="800" y="520" />
               <mxPoint x="800" y="315" />
             </Array>
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
